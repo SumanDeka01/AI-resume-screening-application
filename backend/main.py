@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 
-app = fastAPI()
+app = FastAPI()
 
 @app.get("/")
 def home():
     return {
-        "message": "Backend is Running";
+        "message": "Your backend is Running"
     }
