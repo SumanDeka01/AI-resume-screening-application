@@ -1,0 +1,9 @@
+from fastapi import FastAPI
+
+app = fastAPI()
+
+@app.get("/")
+def home():
+    return {
+        "message": "Backend is Running";
+    }
